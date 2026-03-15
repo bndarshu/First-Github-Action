@@ -14,6 +14,10 @@ env:
   STEP_1_FILE: ".github/steps/1-step.md"
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
   run:
     runs-on: ubuntu-latest
     steps:
